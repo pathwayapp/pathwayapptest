@@ -30,18 +30,19 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myd-Yn-t84">
                                         <rect key="frame" x="0.0" y="51.666666666666686" width="201" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Evergreen Valley College"/>
+                                        <state key="normal" title="Evergreen Valley College">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
-                                            <segue destination="dOY-5D-3ek" kind="show" id="RzN-yn-wEp"/>
+                                            <segue destination="J8D-Ex-Ta2" kind="show" id="i0Q-t3-0L4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dk2-HU-sw2">
                                         <rect key="frame" x="33.666666666666671" y="114.66666666666669" width="134" height="33"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="De Anza College"/>
-                                        <connections>
-                                            <segue destination="kXh-9a-6AR" kind="show" id="RSS-q4-Dz9"/>
-                                        </connections>
+                                        <state key="normal" title="De Anza College">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,70 +62,6 @@
             </objects>
             <point key="canvasLocation" x="1079.2" y="129.31034482758622"/>
         </scene>
-        <!--Evergreen View Controller-->
-        <scene sceneID="M6r-SE-fP5">
-            <objects>
-                <viewController storyboardIdentifier="Feed" id="dOY-5D-3ek" customClass="EvergreenViewController" customModule="pathwayapptest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Rk-6W-gcA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="ygu-et-pFj">
-                                <rect key="frame" x="-19.666666666666657" y="-86" width="414.33333333333326" height="896"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wvK-Lm-1GR">
-                                <rect key="frame" x="62.666666666666657" y="610" width="249.99999999999997" height="75"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7Q-hV-Rv1">
-                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="75"/>
-                                        <state key="normal" title="Button" image="AltnotifIcon">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M29-1l-0Jk">
-                                        <rect key="frame" x="83.333333333333343" y="0.0" width="83.333333333333343" height="75"/>
-                                        <state key="normal" title="Feed" backgroundImage="feedIcon">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rX5-dt-ejj">
-                                        <rect key="frame" x="166.66666666666669" y="0.0" width="83.333333333333314" height="75"/>
-                                        <state key="normal" title="Notifications" backgroundImage="AltnotifIcon">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="7OA-dk-j2B" kind="show" id="PpI-EU-RiS"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="aQr-w2-vTf"/>
-                                    <constraint firstAttribute="width" constant="250" id="u2b-9x-a6j"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="wvK-Lm-1GR" firstAttribute="centerX" secondItem="8Rk-6W-gcA" secondAttribute="centerX" id="Oxb-L5-7th"/>
-                            <constraint firstItem="ygu-et-pFj" firstAttribute="centerX" secondItem="8Rk-6W-gcA" secondAttribute="centerX" id="RCg-S8-8Zi"/>
-                            <constraint firstItem="4Y2-KP-eGa" firstAttribute="bottom" secondItem="wvK-Lm-1GR" secondAttribute="bottom" constant="5" id="U0r-y7-DQC"/>
-                            <constraint firstItem="ygu-et-pFj" firstAttribute="centerY" secondItem="8Rk-6W-gcA" secondAttribute="centerY" id="yvL-FH-DLg"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="4Y2-KP-eGa"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="KIS-Va-DCv">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menuIcon" id="8y5-Le-ajI">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="didTapMenu:" destination="dOY-5D-3ek" id="jjM-te-20v"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mOu-z5-SHp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2006" y="-183"/>
-        </scene>
         <!--Menu Table View Controller-->
         <scene sceneID="ywZ-KK-LiG">
             <objects>
@@ -143,8 +80,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uJI-Lh-eHs">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schoolfeed" translatesAutoresizingMaskIntoConstraints="NO" id="uJI-Lh-eHs">
                                                     <rect key="frame" x="16" y="30" width="50" height="50"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="3iw-Af-2M2"/>
                                                         <constraint firstAttribute="height" constant="50" id="JRL-sG-w7n"/>
@@ -173,7 +111,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resourceIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-Bj-2Ay">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resources" translatesAutoresizingMaskIntoConstraints="NO" id="Ybh-Bj-2Ay">
                                                     <rect key="frame" x="16" y="30" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="mWG-If-Tm5"/>
@@ -203,7 +141,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="studentlifeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="OxJ-bz-dxS">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="studentlife" translatesAutoresizingMaskIntoConstraints="NO" id="OxJ-bz-dxS">
                                                     <rect key="frame" x="16" y="30" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="3kw-HY-r1i"/>
@@ -233,15 +171,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-HF-inU">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messages" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-HF-inU">
                                                     <rect key="frame" x="16" y="30" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="glE-De-qyh"/>
                                                         <constraint firstAttribute="height" constant="50" id="hyC-Or-gh2"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox2-D2-eTm">
-                                                    <rect key="frame" x="82" y="45" width="44.666666666666657" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ox2-D2-eTm">
+                                                    <rect key="frame" x="82" y="45" width="82.666666666666686" height="20"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -263,8 +201,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="accountIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-AV-svQ">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="account" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-AV-svQ">
                                                     <rect key="frame" x="16" y="30" width="50" height="50"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="2Yh-xc-uTo"/>
                                                         <constraint firstAttribute="height" constant="50" id="vAD-3n-1jy"/>
@@ -298,7 +237,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2pe-IR-mmh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2704.8000000000002" y="-497.29064039408871"/>
+            <point key="canvasLocation" x="2006" y="-866"/>
         </scene>
         <!--No Account View Controller-->
         <scene sceneID="YiU-RK-uG1">
@@ -329,7 +268,9 @@
                                             <constraint firstAttribute="height" constant="35" id="OTB-B9-vzg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="xbn-kc-KVu" kind="show" id="HTm-gI-e8o"/>
                                         </connections>
@@ -340,7 +281,9 @@
                                             <constraint firstAttribute="height" constant="35" id="koA-97-50m"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Log In"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="ik4-sW-I07" kind="show" id="9hG-h3-CHc"/>
                                         </connections>
@@ -361,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nDC-2f-TN9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3386" y="-213"/>
+            <point key="canvasLocation" x="4113" y="-179"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="atd-dh-qdJ">
@@ -398,7 +341,9 @@
                                             <constraint firstAttribute="height" constant="60" id="wa9-Tb-soR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Log In"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH8-nb-5Xd">
                                         <rect key="frame" x="0.0" y="210" width="295" height="60"/>
@@ -424,7 +369,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIL-Ki-ayn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4169" y="158"/>
+            <point key="canvasLocation" x="4953" y="163"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="Vua-7i-eu9">
@@ -439,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fbE-dv-oPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3427" y="-978"/>
+            <point key="canvasLocation" x="4918" y="-1194"/>
         </scene>
         <!--Messages View Controller-->
         <scene sceneID="FVc-ng-caI">
@@ -454,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bqd-ju-plz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3403" y="-1668"/>
+            <point key="canvasLocation" x="3423" y="-1194"/>
         </scene>
         <!--Student Life View Controller-->
         <scene sceneID="qOY-q2-Nzz">
@@ -524,7 +469,9 @@
                                             <constraint firstAttribute="height" constant="60" id="YRM-K1-Khk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                        <state key="normal" title="Sign Up"/>
+                                        <state key="normal" title="Sign Up">
+                                            <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jA-c6-mfc">
                                         <rect key="frame" x="0.0" y="340" width="295" height="60"/>
@@ -550,77 +497,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W09-s7-QLR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4169" y="-515"/>
+            <point key="canvasLocation" x="4953" y="-514"/>
         </scene>
-        <!--Deanza View Controller-->
-        <scene sceneID="d2z-Yi-Zzb">
+        <!--Item 2-->
+        <scene sceneID="zuq-8H-3vH">
             <objects>
-                <viewController id="kXh-9a-6AR" customClass="DeanzaViewController" customModule="pathwayapptest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="AZa-Za-OnN">
+                <viewController id="kIo-LD-JKP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jEl-aj-Sa1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="v60-7j-LMh"/>
+                        <viewLayoutGuide key="safeArea" id="5xM-ko-sdw"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NXa-kE-Y0h"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="notification" id="BA3-GL-FMP"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Jh-La-pky" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cr-wa-nmE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="483"/>
+            <point key="canvasLocation" x="2796" y="115"/>
         </scene>
-        <!--Notification View Controller-->
-        <scene sceneID="7zz-Kq-SXh">
+        <!--Item 1-->
+        <scene sceneID="8bC-cg-A1A">
             <objects>
-                <viewController id="7OA-dk-j2B" customClass="NotificationViewController" customModule="pathwayapptest" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rPt-Ng-SPm">
+                <viewController id="ea1-tt-d2L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D4u-Ne-TS1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="TBx-xM-Bn6">
-                                <rect key="frame" x="-19.666666666666657" y="-86" width="414.33333333333326" height="896"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rqu-fs-cL9">
-                                <rect key="frame" x="62.666666666666657" y="610" width="249.99999999999997" height="75"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37r-ok-IOJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="75"/>
-                                        <state key="normal" title="Button" backgroundImage="AltnotifIcon">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwK-Am-phW">
-                                        <rect key="frame" x="83.333333333333343" y="0.0" width="83.333333333333343" height="75"/>
-                                        <state key="normal" title="Feed" backgroundImage="AltfeedIcon">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omw-4P-ojJ">
-                                        <rect key="frame" x="166.66666666666669" y="0.0" width="83.333333333333314" height="75"/>
-                                        <state key="normal" title="Notifications" backgroundImage="notifIcon">
-                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="3qY-RM-a35"/>
-                                    <constraint firstAttribute="width" constant="250" id="eFp-gQ-gE2"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="rPV-Ud-2oF" firstAttribute="bottom" secondItem="rqu-fs-cL9" secondAttribute="bottom" constant="5" id="g3o-6L-e5Y"/>
-                            <constraint firstItem="rqu-fs-cL9" firstAttribute="centerX" secondItem="rPt-Ng-SPm" secondAttribute="centerX" id="i7I-Yf-495"/>
-                            <constraint firstItem="TBx-xM-Bn6" firstAttribute="centerX" secondItem="rPt-Ng-SPm" secondAttribute="centerX" id="rEx-pz-Njg"/>
-                            <constraint firstItem="TBx-xM-Bn6" firstAttribute="centerY" secondItem="rPt-Ng-SPm" secondAttribute="centerY" id="rvq-Px-gQj"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="rPV-Ud-2oF"/>
+                        <viewLayoutGuide key="safeArea" id="kzZ-G5-vk7"/>
                     </view>
-                    <navigationItem key="navigationItem" id="gQW-F4-hsH"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="schoolfeed" id="bdF-UP-gfW"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YA9-zP-JpK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVn-IE-7Bp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2766" y="222"/>
+            <point key="canvasLocation" x="2796" y="-577"/>
+        </scene>
+        <!--Evergreen View Controller-->
+        <scene sceneID="eFx-cx-eIL">
+            <objects>
+                <tabBarController storyboardIdentifier="Feed" id="J8D-Ex-Ta2" customClass="EvergreenViewController" customModule="pathwayapptest" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1J0-1A-3pd">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" image="menu" id="Jx3-Yh-eUg">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="didTapMenu:" destination="J8D-Ex-Ta2" id="bqs-ns-C5u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="V5z-zb-pSR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ea1-tt-d2L" kind="relationship" relationship="viewControllers" id="pib-ye-5Ze"/>
+                        <segue destination="kIo-LD-JKP" kind="relationship" relationship="viewControllers" id="EDz-oj-dxz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYV-1M-vdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="-214"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xXw-R2-Wv5">
@@ -630,7 +565,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="koE-Xz-d45">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -643,15 +578,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="AltfeedIcon" width="80" height="80"/>
-        <image name="AltnotifIcon" width="80" height="80"/>
-        <image name="accountIcon" width="80" height="80"/>
+        <image name="account" width="120" height="120"/>
         <image name="background" width="413.66665649414062" height="896"/>
-        <image name="feedIcon" width="80" height="80"/>
         <image name="ground" width="414" height="896"/>
-        <image name="menuIcon" width="80" height="80"/>
-        <image name="notifIcon" width="80" height="80"/>
-        <image name="resourceIcon" width="80" height="80"/>
-        <image name="studentlifeIcon" width="80" height="80"/>
+        <image name="menu" width="30" height="30"/>
+        <image name="messages" width="30" height="30"/>
+        <image name="notification" width="30" height="30"/>
+        <image name="resources" width="30" height="30"/>
+        <image name="schoolfeed" width="30" height="30"/>
+        <image name="studentlife" width="30" height="30"/>
     </resources>
 </document>

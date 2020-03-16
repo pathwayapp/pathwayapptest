@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EvergreenViewController: UIViewController {
+class EvergreenViewController: UITabBarController {
 
     let transition = SlideInTransition()
     
@@ -17,6 +17,8 @@ class EvergreenViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
     
     
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
